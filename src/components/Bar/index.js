@@ -25,10 +25,9 @@ function Bar ({ title, xData, yData, style }) {
       ]
     })
   }
-  // 执行这个初始化的函数
-  useEffect(() => {
+  useEffect(()=>{
     chartInit()
-  }, [])
+  })
   return (
     <div>
       {/* 准备一个挂载节点 */}

@@ -45,12 +45,17 @@ const Article = () => {
     const { channel_id, date, status } = values
     // 数据处理
     const _params = {}
+    // 格式化status
     if (status !== -1) {
       _params.status = status
+    } else {
+      _params.status = null
     }
+    // 初始化频道
     if (channel_id) {
       _params.channel_id = channel_id
     }
+    // 初始化时间
     if (date) {
       _params.begin_pubdate = date[0].format('YYYY-MM-DD')
       _params.end_pubdate = date[1].format('YYYY-MM-DD')
