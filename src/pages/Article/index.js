@@ -46,11 +46,8 @@ const Article = () => {
     // 数据处理
     const _params = {}
     // 格式化status
-    if (status !== -1) {
-      _params.status = status
-    } else {
-      _params.status = null
-    }
+    _params.status = status
+   
     // 初始化频道
     if (channel_id) {
       _params.channel_id = channel_id
@@ -173,10 +170,10 @@ const Article = () => {
       >
         <Form
           onFinish={onFinish}
-          initialValues={{ status: -1 }}>
+          initialValues={{ status: null }}>
           <Form.Item label="状态" name="status">
             <Radio.Group>
-              <Radio value={-1}>全部</Radio>
+              <Radio value={null}>全部</Radio>
               <Radio value={0}>草稿</Radio>
               <Radio value={1}>待审核</Radio>
               <Radio value={2}>审核通过</Radio>
