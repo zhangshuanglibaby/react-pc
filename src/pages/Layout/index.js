@@ -14,11 +14,8 @@ import { useEffect } from 'react'
 const { Header, Sider } = Layout
 
 const GeekLayout = () => {
-  console.log('应该重新高亮了')
   const { pathname } = useLocation()
-  console.log(pathname)
   const { userStore, loginStore, channelStore } = useStore()
-  // userStore.getUserInfo()?
   useEffect(() => {
     userStore.getUserInfo()
     channelStore.loadChannelList()

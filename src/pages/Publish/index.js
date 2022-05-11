@@ -117,7 +117,7 @@ const Publish = () => {
     if (id) {
       loadDetail()
     }
-  }, [id,form])
+  }, [id, form])
 
   return (
     <div className="publish">
