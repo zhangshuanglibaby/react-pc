@@ -34,8 +34,8 @@ module.exports = {
         // 实际开发的时候 用公司自己花钱买的cdn服务器
         cdn = {
           js: [
-            'https://cdn.bootcdn.net/ajax/libs/react/17.0.2/umd/react.production.min.js',
-            'https://cdn.bootcdn.net/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/react/18.1.0/umd/react.production.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.1.0/umd/react-dom.production.min.js',
           ],
           css: []
         }
