@@ -104,7 +104,7 @@ const Publish = () => {
       const res = await http.get(`/mp/articles/${id}`)
       const data = res.data
       // 表单数据回填
-      form.current.setFieldsValue({ ...data, type: data.cover.type })
+      form.setFieldsValue({ ...data, type: data.cover.type })
       // 回填upload
       const formatImgList = data.cover.images.map(url => ({ url }))
       setFileList(formatImgList)
